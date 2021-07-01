@@ -1,0 +1,62 @@
+{
+  "name": "graphtype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "start": "ts-node src/index.ts",
+    "start2": "ts-node src/index.ts",
+    "dev2": "nodemon --exec ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/connect-redis": "0.0.14",
+    "@types/cors": "^2.8.10",
+    "@types/express": "4.17.7",
+    "@types/express-session": "^1.17.3",
+    "@types/ioredis": "^4.26.1",
+    "@types/node": "^15.0.1",
+    "@types/redis": "^2.8.28",
+    "@types/uuid": "^8.3.0",
+    "nodemon": "^2.0.7",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.16",
+    "@types/nodemailer": "^6.4.1",
+    "add": "^2.0.6",
+    "apollo-server-express": "^2.24.0",
+    "argon2": "^0.27.2",
+    "class-validator": "^0.13.1",
+    "connect-redis": "^5.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dataloader": "^2.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "graphql": "^15.5.0",
+    "graphql-playground": "^1.3.17",
+    "gzip": "^0.1.0",
+    "ioredis": "^4.27.1",
+    "nodemailer": "^6.6.0",
+    "pg": "^8.6.0",
+    "redis-server": "^1.2.2",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1",
+    "typeorm": "^0.2.32",
+    "uuid": "^8.3.2",
+    "yarn": "^1.22.10"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  }
+}
